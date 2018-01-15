@@ -1,0 +1,166 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body{
+   font-family: "Open Sans", sans-serif;
+  background:url(http://www.css3maker.com/images/body_bg_new.jpg)repeat fixed center top;
+}
+#wrapper{
+  width:70%;
+  height:100%;
+ border-radius:10px;
+  border: solid black;
+  background-color:rgba(255, 255, 255, 0.5);
+ padding:10px;
+  margin: 0 auto;
+  box-sizing:border-box;
+ /* position: relative;
+  left: 50%;
+  transform: translateX(-50%);*/
+  
+}
+#elements{
+  width:70%;
+  margin:0 auto;
+}
+#elements h1{
+  text-align:center;
+}
+#user{
+  width:300px;
+  height:300px;
+  display:none;
+ float:left;
+  /*position:relative;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  */
+}
+#computer{
+   width:300px;
+  height:300px;
+  float:right;
+   display:none;
+   /*position:relative;
+   left: 20%;
+  transform: translate(70%, -105%);
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+}
+
+/*rock, paper or scissor*/
+.rock{
+  background-image:url("http://pngimg.com/uploads/stone/stone_PNG13592.png");
+ background-size: 70%;
+  background-position:center;
+ background-repeat: no-repeat;
+  
+  
+}
+
+.paper{
+ background-image:url("http://pngimg.com/uploads/paper_sheet/paper_sheet_PNG7238.png") ;
+  background-size: contain;
+  background-size: 70%;
+  background-position:40px 60px  ;
+ background-repeat: no-repeat; 
+  
+  
+}
+
+.scissors{
+ background-image:url("http://pngimg.com/uploads/scissors/scissors_PNG27.png");
+  background-size: 70%;
+  background-position:40px 60px  ;
+ background-repeat: no-repeat; 
+ 
+  
+  
+}
+
+#winner{
+  width:300px;
+  height:100px;
+ 
+  
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  
+  
+}
+
+#winner p{font-weight:bold;
+  font-size:30px;
+  position:relative;
+  bottom:20px;
+text-align:center;
+}
+
+/*EXTRA*/
+.beavis{
+ background-image:url("https://68.media.tumblr.com/abfc844dcbf657f33941983d43c50b06/tumblr_nw6is3eaJA1ro8ysbo1_500.gif");!important
+  background-size: 100%;
+  background-position:  -80px 80px  ;
+ background-repeat: no-repeat; 
+  
+}
+
+.house{
+ background-image:url("https://media.giphy.com/media/K6VhXtbgCXqQU/giphy.gif");
+  background-size: 130%;
+  background-position:  -80px 70px  ;
+ background-repeat: no-repeat; 
+  
+}
+
+/*.fr{float:right;}
+.fl{float:left;}*/
+.clear{clear:both;}
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+  
+  #elements{
+  width:50%;
+  margin:0 auto;
+}
+  
+  
+  #user{
+  width:300px;
+  height:300px;
+  display:none;
+ float:none;
+  
+}
+#computer{
+   width:300px;
+  height:300px;
+  
+   display:none;
+   float:left;
+}
+
+  
+  #winner{
+  width:300px;
+  height:100px;
+ 
+  
+  position: relative;
+  left: 0;
+  transform: translateX(0%);
+  
+  
+  
+}
+  
+  
+}
